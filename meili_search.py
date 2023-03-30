@@ -1,7 +1,7 @@
 import meilisearch
 import json
 
-client = meilisearch.Client('http://192.168.2.221:7700')
+client = meilisearch.Client('http://150.158.79.10:7700/')
 
 
 # 导入数据
