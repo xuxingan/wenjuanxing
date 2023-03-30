@@ -36,8 +36,8 @@ def main():
     ```   
 
     """)
-    img = open('doc.gif', 'rb').read()
-    put_image(img, width='100%')
+    # img = open('doc.gif', 'rb').read()
+    # put_image(img, width='100%')
     info = input_group('答案生成：', [
         slider('偏移量（比较专业不要轻易设置，请咨询专业人士）', name="shifting", value=1, step=1, max_value=10,
                min_value=1),
@@ -58,8 +58,8 @@ def main():
         answer_str += f'document.getElementById("q{(index + 1) + shifting}").value = "{answer}"\n';
         print(answer_str)
     put_markdown("# 答案填报");
-    img2 = open('doc2.gif', 'rb').read()
-    put_image(img2, width='100%')
+    # img2 = open('doc2.gif', 'rb').read()
+    # put_image(img2, width='100%')
     put_code(info["questions"], language='python')
     textarea('调整答案删除不必要内容，将下面code粘贴回答题标签页的控制台', value=answer_str, rows=20, code={
         'mode': "python",
